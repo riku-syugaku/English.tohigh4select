@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>クイズゲーム</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="sceneTop" class="topScreen">
+      <h1>高校入試</h1>
+      <h1>英語４択問題</h1>
+      <p>*8問ずつ出題されます。「全部」は24問</p>
+      <button id="btnStart1" class="botan">A</button>
+      <button id="btnStart2" class="botan">B</button>
+      <button id="btnStart3" class="botan">C</button>
+      <button id="btnStart4" class="botan">全部やる</button>
+</div>
+
+    <div id="sceneGame" class="game screen">
+      <h1>問題  <button id="return">戻る</button>
+
+
+      </h1>
+      <p> Q.( )に当てはまる語を選択してください。  </p>
+      <p id="textQuestion"></p>
+      <ul id="listAnswer" class="choice"></ul>
+    </div>
+
+    <div id="sceneResult" class="result screen">
+      <h1>今回の結果</h1>
+      <p>正解数は<span id="numResult"></span>です。</p>
+      <button id="btnReset">Reset</button>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
